@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Kumar ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #ffe0ec, #ffb6d5, #ffcce5);
+    color: #8e2454;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 30px 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.page.active {
+    display: flex;
+}
+
+.card {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 30px 20px;
+    background: rgba(255,255,255,.90);
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #ad145755;
+}
+
+h1 {
+    color: #d63384;
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+h2 {
+    color: #c2185b;
+    margin: 15px 0;
+}
+
+p {
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.subtitle {
+    color: #a83268;
+    font-style: italic;
+}
+
+button {
+    border: none;
+    background: #e84393;
+    color: white;
+    padding: 14px 27px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 12px;
+    box-shadow: 0 5px 15px #e8439355;
+}
+
+button:active {
+    transform: scale(.96);
+}
+
+.photo {
+    width: 240px;
+    height: 290px;
+    object-fit: cover;
+    border: 6px solid #ff91bc;
+    border-radius: 22px;
+    margin: 18px auto;
+    box-shadow: 0 6px 20px #e8439366;
+    display: block;
+}
+
+.final-photo {
+    width: 240px;
+    height: 290px;
+    object-fit: cover;
+    border: 6px solid #ff91bc;
+    border-radius: 22px;
+    margin: 18px auto;
+    box-shadow: 0 6px 20px #e8439366;
+    display: block;
+}
+
+.message {
+    line-height: 1.9;
+    font-size: 16px;
+    text-align: center;
+    white-space: pre-line;
+    margin-top: 20px;
+}
+
+.music-box {
+    margin: 25px auto;
+    padding: 25px 15px;
+    background: #ffe5f0;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px #e8439322;
+}
+
+.music-box h2 {
+    margin: 20px 0;
+}
+
+.music-box audio {
+    width: 100%;
+    max-width: 330px;
+    margin: 20px auto;
+    display: block;
+}
+
+.music-text {
+    font-size: 17px;
+    color: #91405f;
+}
+
+.surprise {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffe3ee;
+    border-radius: 18px;
+    line-height: 2;
+    animation: appear 1s;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 19px;
+    color: #d63384;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    z-index: 5;
+    pointer-events: none;
+    animation: float 6s linear forwards;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media(max-width:400px) {
+    h1 { font-size: 27px; }
+    .photo { width: 210px; height: 260px; }
+    .final-photo { width: 210px; height: 260px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1: WELCOME -->
+
+<section class="page active" id="page1">
+
+    <div class="card">
+
+        <div style="font-size:55px">🎂💗</div>
+
+        <h1>Hello BAVA ❤️</h1>
+
+        <p>
+            I have a little surprise for you.....😘😘😘
+            <br><br>
+            This little website is made with lots of
+            love, just for you!💗💗💗
+        </p>
+
+        <button onclick="startSurprise()">
+            Open Your Surprise 💌
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PAGE 2: BIRTHDAY + SONG -->
+
+<section class="page" id="page2">
+
+    <div class="card">
+
+        <div style="font-size:45px">🎀🌹🎂</div>
+
+        <h1>Happy Birthday BAVA! ❤️</h1>
+
+        <p class="subtitle">
+            To the most special person in my life 😚
+        </p>
+
+        <h2>I LOVE YOU BAVA 💕</h2>
+
+        <!-- FIRST PHOTO -->
+
+        <img
+            src="kumar.jpg"
+            alt="My Favourite Person"
+            class="photo"
+        >
+
+        <p class="subtitle">
+            My favourite smile😘
+        </p>
+
+        <p>
+            Today is all about you, my love! ❤️
+        </p>
+
+        <!-- SONG SECTION -->
+
+        <div class="music-box">
+
+            <div style="font-size:55px">
+                🎶💕🎶
+            </div>
+
+            <h1>A Song Just For You</h1>
+
+            <h2>💗 My Love, My Melody 💗</h2>
+
+            <p class="music-text">
+                Every love story has a melody...
+                <br>
+                and this one reminds me of you! 🥹❤️
+            </p>
+
+            <div style="margin-top:30px">
+
+                <div style="font-size:25px">
+                    🎵 Our special song 🎵
+                </div>
+
+                <!-- SAME CONTINUOUS MUSIC PLAYER -->
+
+                <audio id="song" controls loop>
+                    <source src="love.mp3" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+
+                <p class="music-text">
+                    This song carries a little piece of my heart ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+        <p>
+            Listen to it and feel my love, Bava!😘
+        </p>
+
+        <button onclick="nextPage(3)">
+            Next 💕
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PAGE 3: LETTER + FINAL SURPRISE -->
+
+<section class="page" id="page3">
+
+    <div class="card">
+
+        <div style="font-size:45px">💌🌹</div>
+
+        <h1>Dear BAVA❤️</h1>
+
+        <div class="message">
+
+On your special day, I just want to remind you how precious you are to me.
+
+You came into my life and I can't imagine my days without you in my life until my last breath. Your happiness means so much to me, and your smile is something I always want to see.
+
+Sometimes I may not express my feelings properly, but please know that you hold a very special place in my heart.
+
+I wish I could take away all your worries and replace them with happiness.
+
+May every struggle turn into success, every dream turn into reality, and every day bring you a new reason to smile.
+
+I wish to celebrate many more birthdays with you.
+
+Stay happy, stay blessed, and always remember that I love you endless Forever Bava😘😘😘.
+
+I LOVE YOU SO MUCH BAVA 🫂🫂😘😘😘😘
+
+        </div>
+
+        <!-- FINAL SURPRISE -->
+
+        <div style="margin-top:30px">
+
+            <div style="font-size:45px">💗💌💗</div>
+
+            <h2>One More Little Surprise! 💌</h2>
+
+            <p>
+                I have something special to tell you...
+            </p>
+
+            <button onclick="showLove()">
+                Tap Here Bava ❤️
+            </button>
+
+            <!-- FINAL LOVE MESSAGE -->
+
+            <div class="surprise" id="love">
+
+                <div style="font-size:45px">💗😘😘</div>
+
+                <!-- SECOND PHOTO -->
+
+                <img
+                    src="kumar2.jpg"
+                    alt="Our special memory"
+                    class="final-photo"
+                >
+
+                <h2>I LOVE YOU!</h2>
+
+                <p>
+                    BAVA💗..... You have no idea how deeply I love you. You're not just in my heart, you're a part of every heartbeat on my heart. I wish I could hug you a little tighter, kiss you a little longer, and make you feel how much you mean to me. I want all of you — your smiles, your silly moments, your anger, your dreams, and even your silent days. I don't need a perfect world, I just need you in mine. You're my favourite feeling, my sweetest obsession, and the love I never want to lose. I LOVE YOU BAVA😘.I LOVE SO MUCH BAVA💗😘🫂
+                    I LOVE YOU FOREVER BAVA😘😘😘
+                </p>
+
+                <h2>Forever Yours! 💋💕</h2>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            Made with endless love ❤️
+
+            <br><br>
+
+            Happy Birthday BAVA💗💗🫂😘😘😘😘😘
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+let heartsStarted = false;
+
+// START SONG AND OPEN BIRTHDAY PAGE
+
+function startSurprise() {
+
+    const song = document.getElementById("song");
+
+    song.play().catch(() => {
+        console.log("Please press the music player play button.");
+    });
+
+    nextPage(2);
+
+    if (!heartsStarted) {
+        setInterval(createHeart, 450);
+        heartsStarted = true;
+    }
+}
+
+// CHANGE PAGES
+
+function nextPage(pageNumber) {
+
+    document.querySelectorAll(".page").forEach(page => {
+        page.classList.remove("active");
+    });
+
+    document.getElementById("page" + pageNumber)
+        .classList.add("active");
+
+    window.scrollTo(0, 0);
+}
+
+// FINAL LOVE MESSAGE
+
+function showLove() {
+
+    document.getElementById("love").style.display = "block";
+}
+
+// FLOATING HEARTS
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const hearts = ["❤️", "💕", "💗", "💖", "🌸"];
+
+    heart.innerHTML = hearts[
+        Math.floor(Math.random() * hearts.length)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.fontSize = (18 + Math.random() * 20) + "px";
+
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 8000);
+}
+
+</script>
+
+</body>
+</html>
+
